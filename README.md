@@ -21,6 +21,6 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
    cd your-repo-name
 
 2. Install the required packages:
-   '''bash
+   ```bash
    pip install opencv-python google-generativeai ipython
 
