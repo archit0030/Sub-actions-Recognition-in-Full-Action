@@ -37,7 +37,7 @@ video_file_name = "Pro.mp4"
 
 
 
-genai.configure(api_key="AIzaSyA0T_PSpejfaSi5Z8Gefke1zMoKm5ucb7s")
+genai.configure(api_key="Your API KEY")
 # Choose a Gemini API model.
 model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
 
