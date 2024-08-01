@@ -17,5 +17,10 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/archit0030/Sub-actions-Recognition-in-Full-Action.git
    cd your-repo-name
+
+2. Install the required packages:
+   '''bash
+   pip install opencv-python google-generativeai ipython
+
