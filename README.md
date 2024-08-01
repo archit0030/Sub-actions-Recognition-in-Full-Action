@@ -24,3 +24,12 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
    ```bash
    pip install opencv-python google-generativeai ipython
 
+## Usage
+
+1. Capture and Save Video:
+   The script captures video from a default webcam or a specified video file and saves it to 'pro.mp4'.
+2. Configure and Use Gemini API:
+   Upload the captured video and generate a sequence of subtasks using the Gemini API
+## Replace "YOUR_API_KEY" with the actual Gemini API key.
+    
+   
