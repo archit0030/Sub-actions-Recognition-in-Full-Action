@@ -7,7 +7,7 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 
 ## Requirements
 
-- Python 3.x
+- Python 3.9 or above
 - OpenCV
 - Google Generative AI Client Library
 - IPython (for Jupyter Notebook integration)
