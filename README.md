@@ -31,5 +31,25 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 2. Configure and Use Gemini API:
    Upload the captured video and generate a sequence of subtasks using the Gemini API
 3. Replace "YOUR_API_KEY" with the actual Gemini API key.
-    
+
+
+# Results
+
+
+
+   https://github.com/user-attachments/assets/71f8866a-de6b-48ff-bca8-71b510d43c86
+
+   *Prediction:*
+   A hand reaches into the frame and places an empty yellow bottle in the center of a white surface. 
+
+   Here's a possible breakdown of subactions based on your provided list and the description:
    
+   1. **Reach:** The hand initially extends towards the bottle.
+   2. **Grasp:** The hand closes around the bottle to get a firm hold.
+   3. **Pick-Up:**  The hand lifts the bottle from its original location. 
+   4. **Move:** The hand carrying the bottle travels towards the white surface.
+   5. **Place-Down:**  The hand sets the bottle onto the white surface.
+   6. **Release:** The hand opens, letting go of the bottle.
+   7. **Retract:** The hand moves back out of the frame. 
+   
+
