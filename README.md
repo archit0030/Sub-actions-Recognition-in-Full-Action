@@ -36,8 +36,8 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 # Results
 
 
+   https://github.com/user-attachments/assets/772a758c-596f-4fb1-89cd-d7e7b159d831
 
-   https://github.com/user-attachments/assets/71f8866a-de6b-48ff-bca8-71b510d43c86
 
    *Prediction:*
    A hand reaches into the frame and places an empty yellow bottle in the center of a white surface. 
@@ -52,4 +52,8 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
    6. **Release:** The hand opens, letting go of the bottle.
    7. **Retract:** The hand moves back out of the frame. 
    
+
+
+
+
 
