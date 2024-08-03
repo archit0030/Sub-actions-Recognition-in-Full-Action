@@ -6,7 +6,7 @@ from IPython.display import Markdown
 import time
 
 def capture_and_save_video(video_path):
-    cap = cv2.VideoCapture("combined_task - Made with Clipchamp.mp4")  # Use the default webcam (change to the appropriate index if you have multiple webcams)
+    cap = cv2.VideoCapture(1)  # Use the default webcam (change to the appropriate index if you have multiple webcams)
     frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     out = cv2.VideoWriter(video_path, cv2.VideoWriter_fourcc(*'mp4v'), 30, (frame_width, frame_height))
@@ -37,7 +37,7 @@ video_file_name = "Pro.mp4"
 
 
 
-genai.configure(api_key="Your API KEY")
+genai.configure(api_key="AIzaSyA0T_PSpejfaSi5Z8Gefke1zMoKm5ucb7s")
 # Choose a Gemini API model.
 model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
 
@@ -60,22 +60,31 @@ if video_file.state.name == "FAILED":
 
 # Define the message format correctly
 messages = [
-                                  {"text": "You are a robotic manipulator whose task is to generate a sequence of subtasks along with the object to be operated upon."},
-                                  {"text": "The possible set of subactions that you can perform are: [Reach, Tilt, Retract, Grasp, Release, Stir, Wipe, Press, Rotate, pick, place, open, close, insert, remove, move, Reach_2]"},
-                                  {"text": "do not add tilt in pick and place task and always use reach first"},
-                                  {"text": "use retract only at the end of subtasks"},
-                                  {"text": "make sure that the subaction will not repeat and retract will always come at the end of the sequence"}
+    {
+        "text": "read the video and write a video captioning what human has performed in an input video"},
 ]
 
 # Choose a Gemini model.
-model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")
-
+model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest")#gemini-1.5-pro-latest #gemini-1.5-flash
+# Start a chat session
+chat_session = model.start_chat()
 # Make the LLM request.
 print("Making LLM inference request...")
 response = model.generate_content([video_file] + messages,
-                                                                request_options={"timeout": 600})
+                                                                request_options={"timeout": 700})
 
 # Print the response, rendering any Markdown
 Markdown(response.text)
 
 print(response.text)
+
+
+messages2 = [
+    {"text": response.text},
+    {"text": "according the the caption above explain the possible subtasks human has performed"},
+    {"text": "The possible set of subactions that you can perform are: [Reach, Tilt, Retract, Grasp, Release, Stir, Wipe, Press, Pick-Up, Place-Down, Move, Reach_2], do not add other subaction based on only given these predict the subactions"},
+    {"text": "make sure that the subaction will not repeat and retract will always come at the end of the sequence"},
+]
+
+response2 = chat_session.send_message(messages2)
+print(response2.text)
