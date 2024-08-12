@@ -35,6 +35,9 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 
 # Results
 
+![Screenshot 2024-08-12 184701](https://github.com/user-attachments/assets/7738105f-333e-4750-a1e3-0f09d82daa5d)
+
+
 
  ![Input_video](https://github.com/user-attachments/assets/a90af8b0-81bc-40a7-965e-923743641c6a)
   
