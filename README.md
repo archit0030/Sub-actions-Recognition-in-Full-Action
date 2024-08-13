@@ -32,7 +32,7 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
    Upload the captured video and generate a sequence of subtasks using the Gemini API
 3. Replace "YOUR_API_KEY" with the actual Gemini API key.
 4. 
-![Screenshot 2024-08-12 184701](https://github.com/user-attachments/assets/7738105f-333e-4750-a1e3-0f09d82daa5d)
+
 
 # Results
 
