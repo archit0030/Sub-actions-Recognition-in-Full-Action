@@ -31,7 +31,7 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 2. Configure and Use Gemini API:
    Upload the captured video and generate a sequence of subtasks using the Gemini API
 3. Replace "YOUR_API_KEY" with the actual Gemini API key.
-4. 
+
 
 
 # Results
