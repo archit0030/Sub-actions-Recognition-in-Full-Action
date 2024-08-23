@@ -33,7 +33,7 @@ This project captures a video, uploads it to the Gemini API, and generates a seq
 3. Replace "YOUR_API_KEY" with the actual Gemini API key.
 
 
-![Screenshot 2024-08-12 184701](https://github.com/user-attachments/assets/7738105f-333e-4750-a1e3-0f09d82daa5d)
+#![Screenshot 2024-08-12 184701](https://github.com/user-attachments/assets/7738105f-333e-4750-a1e3-0f09d82daa5d)
 # Results
 
 
